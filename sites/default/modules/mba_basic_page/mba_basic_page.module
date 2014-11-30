@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the MBA basic page feature.
+ */
+
+include_once 'mba_basic_page.features.inc';
