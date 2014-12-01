@@ -759,7 +759,7 @@ ul.links {
 }
 .sidebar .block {
   border: 1px solid;
-  padding: 15px 20px;
+  padding: 20px 20px;
   margin: 0 0 20px;
 }
 .sidebar h2 {
@@ -1670,15 +1670,15 @@ div.admin-panel .description {
     margin: 0;
     padding: 0;
 }
-.view-clone-of-companies .views-accordion-header{
+.view-companies-lists .views-accordion-header{
     float: left;
     opacity: 0.5;
 }
-.view-clone-of-companies .views-accordion-header.ui-state-active{
+.view-companies-lists .views-accordion-header.ui-state-active{
     float: left;
     opacity: 1;
 }
-.view-clone-of-companies .ui-accordion-content-active{
+.view-companies-lists .ui-accordion-content-active{
     float:none;
     clear: left;
 }
@@ -1694,3 +1694,42 @@ div.admin-panel .description {
     color: #949494;
 }
 
+.region-content ul.quicktabs-tabs{
+    margin:0;
+    padding: 0;
+}
+ul.quicktabs-tabs li {
+    background: #d1d1d1;
+    padding: 10px;
+    margin-right: 5px;
+    -khtml-border-radius-topleft: 8px;
+    -khtml-border-radius-topright: 8px;
+    -khtml-border-radius-bottomleft: 8px;
+    -khtml-border-radius-bottomright: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+ul.quicktabs-tabs li a{
+    color: #717171;
+    text-decoration: none;
+}
+ul.quicktabs-tabs li a{
+    color: #717171;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+ul.quicktabs-tabs li.active {
+    background: #009fe3;
+    color: #ffffff;
+}
+ul.quicktabs-tabs li.active a,
+ul.quicktabs-tabs li a:hover{
+    color: #ffffff;
+}

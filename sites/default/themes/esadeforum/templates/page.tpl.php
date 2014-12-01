@@ -148,7 +148,11 @@
   <?php endif; ?>
 
   <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
-
+      <?php if ($tabs): ?>
+          <div class="tabs">
+              <?php print render($tabs); ?>
+          </div>
+      <?php endif; ?>
     <img src="/sites/default/files/header.gif" alt="header" />
 
     <?php if ($page['sidebar_first']): ?>
@@ -162,11 +166,6 @@
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php print render($title_suffix); ?>
-      <?php if ($tabs): ?>
-        <div class="tabs">
-          <?php print render($tabs); ?>
-        </div>
-      <?php endif; ?>
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?>
         <ul class="action-links">
