@@ -525,6 +525,7 @@ h1#site-name {
 #main {
   margin-top: 10px;
   margin-bottom: 10px;
+  border-bottom: 5px solid #0099dc;
 }
 
 /* ----------------- Featured ----------------- */
@@ -761,8 +762,7 @@ ul.links {
 }
 .sidebar .block {
   border: 1px solid;
-  padding: 20px 20px;
-  margin: 0 0 20px;
+  padding: 15px 20px 5px 20px;
 }
 .sidebar h2 {
   margin: 0 0 0.5em;
@@ -1734,4 +1734,39 @@ ul.quicktabs-tabs li.active {
 ul.quicktabs-tabs li.active a,
 ul.quicktabs-tabs li a:hover{
     color: #ffffff;
+}
+
+#views-exposed-form-companies-lists-page {
+    background: #ccebf8;
+    -khtml-border-radius-topleft: 4px;
+    -khtml-border-radius-topright: 4px;
+    -khtml-border-radius-bottomleft: 4px;
+    -khtml-border-radius-bottomright: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+}
+#edit-field-career-opportunities-tid-wrapper {
+    float: left;
+    padding: 10px;
+}
+#edit-field-career-opportunities-tid-wrapper label,
+#edit-field-career-opportunities-tid-wrapper .views-widget{
+    display: inline-block;
+    margin-right: 10px;
+}
+#edit-field-career-opportunities-tid-wrapper select {
+   background: #ffffff;
+    width: 275px;
+}
+
+.view-companies-lists .view-content{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 30px;
 }
