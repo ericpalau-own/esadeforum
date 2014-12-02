@@ -274,7 +274,6 @@ $drupal_hash_salt = '';
  * for you.
  */
 # $base_url = 'http://www.example.com';  // NO trailing slash!
-$base_url = 'http://esadeforum.localhost.dev';  // NO trailing slash!
 
 /**
  * PHP settings:

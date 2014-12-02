@@ -95,7 +95,7 @@
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
       </a>
         <a href="http://www.esade.edu/web/eng/about-esade/aboutus/inspiring-futures" title="inspiring futures" id="logo_eif">
-            <img src="sites/default/files/logo_eif.jpg" alt="inspiring futures" />
+            <img src="/sites/default/files/logo_eif.jpg" alt="inspiring futures" />
         </a>
     <?php endif; ?>
 
@@ -149,7 +149,7 @@
 
   <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
 
-    <img src="sites/default/files/header.gif" alt="header" />
+    <img src="/sites/default/files/header.gif" alt="header" />
 
     <?php if ($page['sidebar_first']): ?>
       <div id="sidebar-first" class="column sidebar"><div class="section">
