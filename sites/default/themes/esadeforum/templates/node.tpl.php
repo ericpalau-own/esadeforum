@@ -85,11 +85,6 @@
     <h2<?php print $title_attributes; ?>>
       <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
     </h2>
-  <?php else: ?>
-      <?php print render($content['print_links']); ?>
-      <h1 class="title" id="page-title">
-          <?php print $title; ?>
-      </h1>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
 
@@ -124,9 +119,6 @@
     </div>
   <?php endif; ?>
 
-  <?php
-  // Unset print links because they are print before
-  unset($content['print_links']);
-  print render($content['comments']); ?>
+  <?php print render($content['comments']); ?>
 
 </div>

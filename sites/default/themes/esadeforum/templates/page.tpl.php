@@ -87,7 +87,7 @@
 ?>
 <div id="page-wrapper"><div id="page">
 
-    <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
+  <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
         <?php print render($page['header']); ?>
 
     <?php if ($logo): ?>
@@ -148,11 +148,11 @@
   <?php endif; ?>
 
   <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
-      <?php if ($tabs): ?>
-          <div class="tabs">
-              <?php print render($tabs); ?>
-          </div>
-      <?php endif; ?>
+
+    <?php if ($breadcrumb): ?>
+      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+    <?php endif; ?>
+
     <img src="/sites/default/files/header.gif" alt="header" />
 
     <?php if ($page['sidebar_first']): ?>
@@ -162,10 +162,21 @@
     <?php endif; ?>
 
     <div id="content" class="column"><div class="section">
-      <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
+
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
+      <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
+      <?php if ($title): ?>
+        <h1 class="title" id="page-title">
+          <?php print $title; ?>
+        </h1>
+      <?php endif; ?>
       <?php print render($title_suffix); ?>
+      <?php if ($tabs): ?>
+        <div class="tabs">
+          <?php print render($tabs); ?>
+        </div>
+      <?php endif; ?>
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?>
         <ul class="action-links">
@@ -206,7 +217,7 @@
 
     <?php if ($page['footer']): ?>
       <div id="footer" class="clearfix">
-        <?php // print render($page['footer']); ?>
+        <?php print render($page['footer']); ?>
       </div> <!-- /#footer -->
     <?php endif; ?>
 

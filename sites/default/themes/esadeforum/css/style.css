@@ -553,8 +553,10 @@ h1#site-name {
 /* --------------- Highlighted ---------------- */
 
 #highlighted {
-  border-bottom: 1px solid #d3d7d9;
-  font-size: 120%;
+    float: right;
+}
+div#block-print-ui-print-links span{
+    display: inline;
 }
 
 /* ------------------- Help ------------------- */
